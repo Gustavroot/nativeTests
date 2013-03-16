@@ -34,10 +34,12 @@ Ext.define('MyApp.view.MyContainer', {
                     };
 
 
-                    Ext.Msg.alert('Title', 'The quick brown fox jumped over the lazy dog.', Ext.emptyFn);
+                    //Ext.Msg.alert('Title', 'The quick brown fox jumped over the lazy dog.', Ext.emptyFn);
 
 
                     if (navigator.notification) {
+
+                        funcionPrueba();
                         //navigator.geolocation.getCurrentPosition(
                         //function(position){
                         //Se crea un objeto de posicion, con latitud y longitud actuales
