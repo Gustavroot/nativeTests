@@ -29,11 +29,16 @@ Ext.define('MyApp.view.MyContainer', {
             {
                 xtype: 'button',
                 handler: function(button, event) {
+                    funcionPrueba=function(){
+                        alert("sirve!");
+                    };
+
+
                     Ext.Msg.alert('Title', 'The quick brown fox jumped over the lazy dog.', Ext.emptyFn);
 
                     alert("fwe");
 
-                    navigator.notification.confirm('You are the winner!', Ext.emptyFn, 'Game Over','Restart,Exit');
+                    navigator.notification.confirm('You are the winner!', funcionPrueba, 'Game Over','Restart,Exit');
                 },
                 height: '10%',
                 left: '40%',
