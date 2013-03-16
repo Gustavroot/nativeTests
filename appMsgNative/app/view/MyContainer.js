@@ -30,7 +30,8 @@ Ext.define('MyApp.view.MyContainer', {
                 xtype: 'button',
                 handler: function(button, event) {
                     if (Ext.device.Connection.isOnline()) {
-                        Ext.Msg.alert('You are currently connected via ' + Ext.device.Connection.getType());
+                        alert('You are currently connected via ' + Ext.device.Connection.getType());
+                        //Ext.Msg.alert('You are currently connected via ' + Ext.device.Connection.getType());
                     } else {
                         Ext.Msg.alert('You are not currently connected');
                     }
