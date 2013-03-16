@@ -29,16 +29,24 @@ Ext.define('MyApp.view.MyContainer', {
             {
                 xtype: 'button',
                 handler: function(button, event) {
-                    funcionPrueba=function(){
-                        alert("sirve!");
-                    };
+                    if (Ext.device.Connection.isOnline()) {
+                        Ext.Msg.alert('You are currently connected via ' + Ext.device.Connection.getType());
+                    } else {
+                        Ext.Msg.alert('You are not currently connected');
+                    }
 
+
+
+
+
+                    /*
+                    funcionPrueba=function(){
+                    alert("sirve!");
+                    };
 
                     //Ext.Msg.alert('Title', 'The quick brown fox jumped over the lazy dog.', Ext.emptyFn);
 
-
                     if (navigator.notification) {
-
                         funcionPrueba();
                         //navigator.geolocation.getCurrentPosition(
                         //function(position){
@@ -51,8 +59,8 @@ Ext.define('MyApp.view.MyContainer', {
 
                     Ext.Msg.alert('Title', 'Otro msg.', Ext.emptyFn);
 
-
                     //navigator.notification.confirm('You are the winner!', funcionPrueba, 'Game Over','Restart,Exit');
+                    */
                 },
                 height: '10%',
                 left: '40%',
