@@ -36,9 +36,21 @@ Ext.define('MyApp.view.MyContainer', {
 
                     Ext.Msg.alert('Title', 'The quick brown fox jumped over the lazy dog.', Ext.emptyFn);
 
-                    alert("fwe");
 
-                    navigator.notification.confirm('You are the winner!', funcionPrueba, 'Game Over','Restart,Exit');
+                    if (navigator.notification) {
+                        //navigator.geolocation.getCurrentPosition(
+                        //function(position){
+                        //Se crea un objeto de posicion, con latitud y longitud actuales
+                        //    posActual = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+                        //Ext.getCmp("mapaContainerMapa").setMapCenter({latitude: posActual.lat(), longitude: posActual.lng()});
+                        //}
+                        //);
+                    }
+
+                    Ext.Msg.alert('Title', 'Otro msg.', Ext.emptyFn);
+
+
+                    //navigator.notification.confirm('You are the winner!', funcionPrueba, 'Game Over','Restart,Exit');
                 },
                 height: '10%',
                 left: '40%',
