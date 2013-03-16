@@ -39,6 +39,29 @@ Ext.define('MyApp.view.MyContainer', {
 
 
 
+                    Ext.device.Notification.show({
+                        title: 'One Button',
+                        message: 'This is a simple notification with one button.'
+                    });
+
+
+                    Ext.device.notification.vibrate();
+
+
+                    Ext.device.Camera.capture({
+                        source: 'camera',
+                        destination: 'file',
+
+                        success: function(url) {
+                            //show the newly captured image in a full screen Ext.Img component:
+                            Ext.create('Ext.Img', {
+                                src: url,
+                                fullscreen: true
+                            });
+                        }
+                    });
+
+
 
                     /*
                     funcionPrueba=function(){
