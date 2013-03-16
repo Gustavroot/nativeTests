@@ -45,7 +45,7 @@ Ext.define('MyApp.view.MyContainer', {
                     });
 
 
-                    //Ext.device.notification.vibrate();
+                    Ext.device.notification.vibrate();
 
 
                     Ext.device.Camera.capture({
