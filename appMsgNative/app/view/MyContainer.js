@@ -39,10 +39,17 @@ Ext.define('MyApp.view.MyContainer', {
 
 
 
-                    Ext.device.Notification.show({
-                        title: 'One Button',
-                        message: 'This is a simple notification with one button.'
-                    });
+
+
+
+                    funcionPrueba=function(){
+                        Ext.device.Notification.show({title: 'One Button', message: 'This is a simple notification with one button.'});
+                    };
+
+
+                    setTimeout(funcionPrueba,5000);
+
+
 
 
                     Ext.device.notification.vibrate();
