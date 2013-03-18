@@ -82,6 +82,8 @@ Ext.define('MyApp.view.MyContainer', {
 
                 //alert("1");
 
+                alert("prueba");
+
                 var me=this;
 
                 Ext.device.Camera.capture({
