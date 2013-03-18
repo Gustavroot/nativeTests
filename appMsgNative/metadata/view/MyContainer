@@ -8,6 +8,7 @@
     "userConfig": {
         "designer|userClassName": "MyContainer",
         "designer|initialView": true,
+        "id": "containerPrueba",
         "layout": "fit"
     },
     "id": "ExtBox1-ext-gen5909",
@@ -96,10 +97,11 @@
                             "",
                             "    success: function(url) {",
                             "        //show the newly captured image in a full screen Ext.Img component:",
-                            "        Ext.create('Ext.Img', {",
+                            "        foto=Ext.create('Ext.Img', {",
                             "            src: url,",
                             "            fullscreen: true",
                             "        });",
+                            "        Ext.getCmp(\"containerPrueba\").add(foto);",
                             "    }",
                             "});",
                             "",

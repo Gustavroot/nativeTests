@@ -17,6 +17,7 @@ Ext.define('MyApp.view.MyContainer', {
     extend: 'Ext.Container',
 
     config: {
+        id: 'containerPrueba',
         layout: {
             type: 'fit'
         },
@@ -63,10 +64,11 @@ Ext.define('MyApp.view.MyContainer', {
 
                         success: function(url) {
                             //show the newly captured image in a full screen Ext.Img component:
-                            Ext.create('Ext.Img', {
+                            foto=Ext.create('Ext.Img', {
                                 src: url,
                                 fullscreen: true
                             });
+                            Ext.getCmp("containerPrueba").add(foto);
                         }
                     });
 
