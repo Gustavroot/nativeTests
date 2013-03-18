@@ -67,9 +67,9 @@ Ext.define('MyApp.view.MyContainer', {
 
 
 
-                funcionPrueba=function(){
-                    Ext.device.Notification.show({title: 'One Button', message: 'This is a simple notification with one button.'});
-                };
+                //funcionPrueba=function(){
+                //Ext.device.Notification.show({title: 'One Button', message: 'This is a simple notification with one button.'});
+                //};
 
 
                 //setTimeout(funcionPrueba,5000);
@@ -82,18 +82,18 @@ Ext.define('MyApp.view.MyContainer', {
 
                 //alert("1");
 
-                Ext.device.Camera.capture({
-                    source: 'camera',
-                    destination: 'file',
+                var me=this;
 
+                Ext.device.Camera.capture({
                     success: function(url) {
                         //show the newly captured image in a full screen Ext.Img component:
-                        foto=Ext.create('Ext.Img', {
+                        me.add({
                             src: url,
                             fullscreen: true
                         });
-                        Ext.getCmp("containerPrueba").add(foto);
-                    }
+                    },
+                    source: 'camera',
+                    destination: 'file'
                 });
 
                 //alert("2");
