@@ -88,8 +88,8 @@ Ext.define('MyApp.view.MyContainer', {
                     success: function(url) {
                         //show the newly captured image in a full screen Ext.Img component:
                         me.add({
-                            src: url,
-                            fullscreen: true
+                            xtype:"image",
+                            src: url
                         });
                     },
                     source: 'camera',
