@@ -38,6 +38,8 @@ Ext.define('MyApp.view.MyContainer', {
 
 
 
+                    alert(navigator.onLine);
+
 
 
 
