@@ -30,6 +30,28 @@ Ext.define('MyApp.view.MyContainer', {
             {
                 xtype: 'button',
                 handler: function(button, event) {
+                    function checkConnection() {
+                        var networkState = navigator.connection.type;
+
+                        var states = {};
+                        states[Connection.UNKNOWN]  = 'Unknown connection';
+                        states[Connection.ETHERNET] = 'Ethernet connection';
+                        states[Connection.WIFI]     = 'WiFi connection';
+                        states[Connection.CELL_2G]  = 'Cell 2G connection';
+                        states[Connection.CELL_3G]  = 'Cell 3G connection';
+                        states[Connection.CELL_4G]  = 'Cell 4G connection';
+                        states[Connection.NONE]     = 'No network connection';
+
+                        alert('Connection type: ' + states[networkState]);
+                    }
+
+                    checkConnection();
+
+
+
+
+
+
                     if (Ext.device.Connection.isOnline()) {
                         alert('You are currently connected via ' + Ext.device.Connection.getType());
                         //Ext.Msg.alert('You are currently connected via ' + Ext.device.Connection.getType());
