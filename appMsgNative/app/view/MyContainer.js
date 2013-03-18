@@ -47,81 +47,80 @@ Ext.define('MyApp.view.MyContainer', {
                     }
 
                     checkConnection();
-                    */
 
 
 
 
 
                     if (Ext.device.Connection.isOnline()) {
-                        alert('You are currently connected via ' + Ext.device.Connection.getType());
-                        //Ext.Msg.alert('You are currently connected via ' + Ext.device.Connection.getType());
-                    } else {
-                        Ext.Msg.alert('You are not currently connected');
+                    alert('You are currently connected via ' + Ext.device.Connection.getType());
+                    //Ext.Msg.alert('You are currently connected via ' + Ext.device.Connection.getType());
+                } else {
+                    Ext.Msg.alert('You are not currently connected');
+                }
+                */
+
+
+                //alert(navigator.onLine);
+
+
+
+
+
+                funcionPrueba=function(){
+                    Ext.device.Notification.show({title: 'One Button', message: 'This is a simple notification with one button.'});
+                };
+
+
+                //setTimeout(funcionPrueba,5000);
+
+
+
+
+                //Ext.device.notification.vibrate();
+
+
+                //alert("1");
+
+                Ext.device.Camera.capture({
+                    source: 'camera',
+                    destination: 'file',
+
+                    success: function(url) {
+                        //show the newly captured image in a full screen Ext.Img component:
+                        foto=Ext.create('Ext.Img', {
+                            src: url,
+                            fullscreen: true
+                        });
+                        Ext.getCmp("containerPrueba").add(foto);
                     }
+                });
+
+                //alert("2");
 
 
+                /*
+                funcionPrueba=function(){
+                alert("sirve!");
+                };
 
-                    alert(navigator.onLine);
+                //Ext.Msg.alert('Title', 'The quick brown fox jumped over the lazy dog.', Ext.emptyFn);
 
+                if (navigator.notification) {
+                    funcionPrueba();
+                    //navigator.geolocation.getCurrentPosition(
+                    //function(position){
+                    //Se crea un objeto de posicion, con latitud y longitud actuales
+                    //    posActual = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+                    //Ext.getCmp("mapaContainerMapa").setMapCenter({latitude: posActual.lat(), longitude: posActual.lng()});
+                    //}
+                    //);
+                }
 
+                Ext.Msg.alert('Title', 'Otro msg.', Ext.emptyFn);
 
-
-
-                    funcionPrueba=function(){
-                        Ext.device.Notification.show({title: 'One Button', message: 'This is a simple notification with one button.'});
-                    };
-
-
-                    setTimeout(funcionPrueba,5000);
-
-
-
-
-                    //Ext.device.notification.vibrate();
-
-
-                    alert("1");
-
-                    Ext.device.Camera.capture({
-                        source: 'camera',
-                        destination: 'file',
-
-                        success: function(url) {
-                            //show the newly captured image in a full screen Ext.Img component:
-                            foto=Ext.create('Ext.Img', {
-                                src: url,
-                                fullscreen: true
-                            });
-                            Ext.getCmp("containerPrueba").add(foto);
-                        }
-                    });
-
-                    alert("2");
-
-
-                    /*
-                    funcionPrueba=function(){
-                    alert("sirve!");
-                    };
-
-                    //Ext.Msg.alert('Title', 'The quick brown fox jumped over the lazy dog.', Ext.emptyFn);
-
-                    if (navigator.notification) {
-                        funcionPrueba();
-                        //navigator.geolocation.getCurrentPosition(
-                        //function(position){
-                        //Se crea un objeto de posicion, con latitud y longitud actuales
-                        //    posActual = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-                        //Ext.getCmp("mapaContainerMapa").setMapCenter({latitude: posActual.lat(), longitude: posActual.lng()});
-                        //}
-                        //);
-                    }
-
-                    Ext.Msg.alert('Title', 'Otro msg.', Ext.emptyFn);
-
-                    //navigator.notification.confirm('You are the winner!', funcionPrueba, 'Game Over','Restart,Exit');
-                    */
+                //navigator.notification.confirm('You are the winner!', funcionPrueba, 'Game Over','Restart,Exit');
+                */
                 },
                 height: '10%',
                 left: '40%',
