@@ -6,9 +6,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "requires": [
-            "Ext.device.Camera"
-        ],
         "views": [
             "MyContainer"
         ],
