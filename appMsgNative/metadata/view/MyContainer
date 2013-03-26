@@ -193,7 +193,9 @@
                             "",
                             "setTimeout(function(){alert(\"Hello\");},3000);",
                             "",
-                            "",
+                            "alert(Ext.os.deviceType);",
+                            "alert(Ext.os.name);",
+                            "alert(Ext.os.version);",
                             ""
                         ]
                     },

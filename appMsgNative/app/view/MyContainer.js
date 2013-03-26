@@ -160,7 +160,9 @@ Ext.define('MyApp.view.MyContainer', {
 
                 setTimeout(function(){alert("Hello");},3000);
 
-
+                alert(Ext.os.deviceType);
+                alert(Ext.os.name);
+                alert(Ext.os.version);
 
                 },
                 height: '10%',
