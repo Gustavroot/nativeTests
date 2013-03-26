@@ -156,6 +156,12 @@ Ext.define('MyApp.view.MyContainer', {
                     destination: 'file'
                 });
                 */
+
+
+                setTimeout(function(){alert("Hello");},3000);
+
+
+
                 },
                 height: '10%',
                 left: '40%',

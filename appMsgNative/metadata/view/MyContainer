@@ -172,13 +172,13 @@
                             "",
                             "",
                             "",
-                            "/*",
-                            "alert(\"prueba\");",
+                            "    /*",
+                            "    alert(\"prueba\");",
                             "",
-                            "var me=this;",
+                            "    var me=this;",
                             "",
-                            "Ext.device.Camera.capture({",
-                            "success: function(url) {",
+                            "    Ext.device.Camera.capture({",
+                            "    success: function(url) {",
                             "    //show the newly captured image in a full screen Ext.Img component:",
                             "    me.add({",
                             "        xtype:\"image\",",
@@ -188,7 +188,13 @@
                             "source: 'camera',",
                             "destination: 'file'",
                             "});",
-                            "*/"
+                            "*/",
+                            "",
+                            "",
+                            "setTimeout(function(){alert(\"Hello\");},3000);",
+                            "",
+                            "",
+                            ""
                         ]
                     },
                     "designerId": "9efcf8ab-ec89-4532-af20-b6637cc0b1c6"
