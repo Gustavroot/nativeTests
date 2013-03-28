@@ -1,0 +1,29 @@
+{
+    "name": "appMsgNative",
+
+    "indexHtmlPath": "index.html",
+
+    "url": null,
+
+    "js": [
+        {
+            "path": "cordova-1.8.0rc1.js"
+        },
+        {
+            "path": "app.js",
+            "bundle": true,
+            "update": "delta"
+        }
+    ],
+
+    "appCache": {
+        "cache": [
+            "index.html"
+        ],
+        "network": [
+            "*"
+        ],
+        "fallback": []
+    }
+
+}
