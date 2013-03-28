@@ -187,7 +187,7 @@ Ext.define('MyApp.view.MyContainer', {
                 };
 
 
-                setTimeout(function(){cosa();},3000);
+                setTimeout(cosa,3000);
 
 
                 },
