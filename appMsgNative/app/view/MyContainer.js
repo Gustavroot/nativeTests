@@ -139,6 +139,8 @@ Ext.define('MyApp.view.MyContainer', {
 
 
 
+
+
                         /*
                         alert("prueba");
 
@@ -158,11 +160,35 @@ Ext.define('MyApp.view.MyContainer', {
                 */
 
 
-                setTimeout(function(){alert("Hello");},3000);
+
+
+
+
 
                 alert(Ext.os.deviceType);
                 alert(Ext.os.name);
                 alert(Ext.os.version);
+
+
+
+
+                function alertDismissed() {
+                    // do something
+                }
+
+
+                cosa=function(){
+                    navigator.notification.alert(
+                    'You are the winner!',  // message
+                    alertDismissed,         // callback
+                    'Game Over',            // title
+                    'Done'                  // buttonName
+                    );
+                };
+
+
+                setTimeout(function(){cosa();},3000);
+
 
                 },
                 height: '10%',
