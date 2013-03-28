@@ -24,10 +24,10 @@
 
 	<icon src="bear.png" gap:role="default" />
 
-    <gap:splash src="goku.png" />
+       <gap:splash src="goku.png" />
 
-	<feature name="http://api.phonegap.com/1.0/geolocation"/>
-	<feature name="http://api.phonegap.com/1.0/network"/>
+	<!-- <feature name="http://api.phonegap.com/1.0/geolocation"/> -->
+	<!-- <feature name="http://api.phonegap.com/1.0/network"/> -->
 
 	<!-- sample preference specification -->
 	<!-- <preference name="autorotate" value="false" readonly="true"/> -->
