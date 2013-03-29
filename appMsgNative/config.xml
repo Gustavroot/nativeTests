@@ -27,11 +27,6 @@
 
        <gap:splash src="goku.jpg" />
 
-       <gap:plugin name="FacebookConnect">
-               <param name="APP_ID" value="343895802382049" />
-       </gap:plugin>
-
-
        <preference name="orientation" value="portrait" />
        <preference name="android-minSdkVersion" value="10" />
        <preference name="android-maxSdkVersion" value="15" />
