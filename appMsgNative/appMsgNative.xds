@@ -28,6 +28,12 @@
                 "metadata/resource/Library"
             ],
             "className": "Library"
+        },
+        "12844707-3eee-46fb-876e-7ad8b1007cd1": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
         }
     },
     "viewOrderMap": {
@@ -38,7 +44,8 @@
         "controller": [],
         "model": [],
         "resource": [
-            "b38a6d34-22d1-4980-b192-0ab0d7d5cd2f"
+            "b38a6d34-22d1-4980-b192-0ab0d7d5cd2f",
+            "12844707-3eee-46fb-876e-7ad8b1007cd1"
         ],
         "app": [
             "application"
