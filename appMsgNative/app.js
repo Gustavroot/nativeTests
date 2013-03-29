@@ -93,9 +93,6 @@ Ext.application({
         }
 
 
-        Ext.get('splashLoader').destroy();
-
-
         Ext.create('MyApp.view.MyContainer', {fullscreen: true});
     }
 

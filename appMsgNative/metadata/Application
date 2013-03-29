@@ -93,9 +93,6 @@
                     "catch(e){",
                     "}",
                     "",
-                    "",
-                    "Ext.get('splashLoader').destroy();",
-                    "",
                     ""
                 ]
             },
