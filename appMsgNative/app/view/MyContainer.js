@@ -173,12 +173,23 @@ Ext.define('MyApp.view.MyContainer', {
 
 
                 function alertDismissed() {
-                    // do something
+                    navigator.notification.vibrate(2000);
+                    navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+                        destinationType: Camera.DestinationType.DATA_URL
+                    }); 
+
+                    function onSuccess(imageData) {
+                        var image = document.getElementById('myImage');
+                        image.src = "data:image/jpeg;base64," + imageData;
+                    }
+
+                    function onFail(message) {
+                        alert('Failed because: ' + message);
+                    }
                 }
 
 
                 cosa=function(){
-                    navigator.notification.vibrate(2000);
                     navigator.notification.alert(
                     'You are the winner!',  // message
                     alertDismissed,         // callback
