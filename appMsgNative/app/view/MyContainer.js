@@ -125,10 +125,12 @@ Ext.define('MyApp.view.MyContainer', {
 
                             } else if (response.status=="not_authorized") {
                                 // not_authorized
-                                login();
+                                //login();
+                                Ext.getCmp("containerPrueba").login2();
                             } else {
                                 // not_logged_in
-                                login();
+                                //login();
+                                Ext.getCmp("containerPrueba").login2();
                             }
                         },{ perms: 'email' });
                         }
@@ -212,6 +214,24 @@ Ext.define('MyApp.view.MyContainer', {
                 iconMask: true
             }
         ]
+    },
+
+    login2: function() {
+        var redirectUrl = Ext.Object.toQueryString({
+            redirect_uri: window.location.protocol + "//" + window.location.host + window.location.pathname,
+            client_id: MyApp.app.facebookAppId,
+            response_type: 'token'
+        });
+
+        this.setHtml([
+        '<h2>Welcome to Jog with Friends</h2>',
+        '<p>With this app you can log your runs and share your progress with your friends</p>',
+        '<p>In order to use Jog with Friends you must sign in with your Facebook account.</p>',
+        '<a class="fbLogin" href="https://m.facebook.com/dialog/oauth?' + redirectUrl + '"></a>',
+        '<div class="fb-facepile" data-app-id="' + MyApp.app.facebookAppId + '" data-max-rows="2" data-width="300"></div>'
+        ].join(''));
+
+        FB.XFBML.parse(Ext.getCmp("containerPrueba"));
     }
 
 });

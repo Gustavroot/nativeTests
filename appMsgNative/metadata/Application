@@ -25,6 +25,8 @@
                 "designer|userClassName": "launch",
                 "fn": "launch",
                 "implHandler": [
+                    "this.facebookAppId = '343895802382049';",
+                    "",
                     "//codigo de facebook:",
                     "try{",
                     "    //FACEBOOK SDK",
@@ -89,7 +91,12 @@
                     "    //--------------------------------------------------------------------------------------------------------------------------------------",
                     "}",
                     "catch(e){",
-                    "}"
+                    "}",
+                    "",
+                    "",
+                    "Ext.get('splashLoader').destroy();",
+                    "",
+                    ""
                 ]
             },
             "designerId": "60b5b416-6966-4b73-81d5-2d3534d73edd"

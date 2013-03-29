@@ -24,6 +24,8 @@ Ext.application({
     name: 'MyApp',
 
     launch: function() {
+        this.facebookAppId = '343895802382049';
+
         //codigo de facebook:
         try{
             //FACEBOOK SDK
@@ -89,6 +91,11 @@ Ext.application({
         }
         catch(e){
         }
+
+
+        Ext.get('splashLoader').destroy();
+
+
         Ext.create('MyApp.view.MyContainer', {fullscreen: true});
     }
 
