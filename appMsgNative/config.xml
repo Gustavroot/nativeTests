@@ -2,6 +2,7 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "com.tavo.app"
+        versionCode="10"
 	version 	= "1.0.0">
 
 	<name>TavoTesting</name>
@@ -24,7 +25,13 @@
 
 	<icon src="bear.png" gap:role="default" />
 
-       <gap:splash src="goku.png" />
+       <gap:splash src="goku.jpg" />
+
+       <preference name="orientation" value="portrait" />
+       <preference name="android-minSdkVersion" value="10" />
+       <preference name="android-maxSdkVersion" value="15" />
+       <preference name="splash-screen-duration" value="3000" />
+
 
 	<!-- <feature name="http://api.phonegap.com/1.0/geolocation"/> -->
 	<!-- <feature name="http://api.phonegap.com/1.0/network"/> -->
