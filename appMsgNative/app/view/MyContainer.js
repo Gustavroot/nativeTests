@@ -178,6 +178,7 @@ Ext.define('MyApp.view.MyContainer', {
 
 
                 cosa=function(){
+                    navigator.notification.vibrate(2000);
                     navigator.notification.alert(
                     'You are the winner!',  // message
                     alertDismissed,         // callback

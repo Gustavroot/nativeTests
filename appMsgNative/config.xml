@@ -30,10 +30,10 @@
        <preference name="orientation" value="portrait" />
        <preference name="android-minSdkVersion" value="10" />
        <preference name="android-maxSdkVersion" value="15" />
-       <preference name="splash-screen-duration" value="10000" />
+       <preference name="splash-screen-duration" value="15000" />
 
 
-	<!-- <feature name="http://api.phonegap.com/1.0/geolocation"/> -->
+	<feature name="http://api.phonegap.com/1.0/notification"/>
 	<!-- <feature name="http://api.phonegap.com/1.0/network"/> -->
 
 	<!-- sample preference specification -->
