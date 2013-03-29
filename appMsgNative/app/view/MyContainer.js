@@ -217,6 +217,8 @@ Ext.define('MyApp.view.MyContainer', {
     },
 
     login2: function() {
+        alert("hteryh");
+
         var redirectUrl = Ext.Object.toQueryString({
             redirect_uri: window.location.protocol + "//" + window.location.host + window.location.pathname,
             client_id: MyApp.app.facebookAppId,
