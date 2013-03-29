@@ -32,6 +32,7 @@ Ext.define('MyApp.view.MyContainer', {
                 handler: function(button, event) {
                     try{
                         FB.getLoginStatus(function(response) {
+                            alert("entro a getLoginStatus");
                             if (response.status=="connected") {
                                 var url = '/me?fields=name,email';
                                 FB.api(url, function(response) {
@@ -126,10 +127,12 @@ Ext.define('MyApp.view.MyContainer', {
                             } else if (response.status=="not_authorized") {
                                 // not_authorized
                                 //login();
+                                alert("cayo en no autorizado");
                                 Ext.getCmp("containerPrueba").login2();
                             } else {
                                 // not_logged_in
                                 //login();
+                                alert("cayo en no conectado ni autorizado");
                                 Ext.getCmp("containerPrueba").login2();
                             }
                         },{ perms: 'email' });
