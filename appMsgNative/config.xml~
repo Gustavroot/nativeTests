@@ -28,7 +28,7 @@
        <gap:splash src="goku.jpg" />
 
        <gap:plugin name="FacebookConnect">
-               <param name="APP_ID" value="343895802382049" />
+          <param name="APP_ID" value="343895802382049" />
        </gap:plugin>
 
 
